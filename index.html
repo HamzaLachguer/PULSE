@@ -37,7 +37,7 @@
 </head>
 <body>
 
-  <header class="sticky top-0 z-50 w-full bg-[#101010]">
+  <header class="sticky top-0 z-50 w-full bg-[#000000]">
     <!-- for desktop -->
     <nav class="hidden  md:flex justify-between py-3 px-5 items-center">
       <ul class="flex gap-6 text-base uppercase font-semibold">
@@ -64,7 +64,7 @@
         <div class="line two h-[2px] w-[18px] bg-[#e1e1e1] transition-all duration-300 ease-in-out"></div>
       </button>
 
-      <nav aria-hidden="true" aria-label="navigation menu" id="nav-menu" class="absolute top-12 left-0 w-full h-fit transition-all duration-300 ease-in-out overflow-hidden bg-[#101010]">
+      <nav aria-hidden="true" aria-label="navigation menu" id="nav-menu" class="absolute top-12 left-0 w-full h-fit transition-all duration-300 ease-in-out overflow-hidden bg-[#000000]">
         <ul id="nav-list" class="text-base uppercase font-semibold text-center ">
           <li class="py-3 border-b border-[#e1e1e150] border-t hover:text-[#e1e1e195] transition-all duration-300 ease-in-out"><a href="">playlist</a></li>
           <li class="py-3 border-b border-[#e1e1e150] hover:text-[#e1e1e195] transition-all duration-300 ease-in-out"><a href="">account</a></li>
@@ -81,13 +81,36 @@
 
     <section class="hero-section relative flex items-center justify-center">
       <div class="h-[640px] w-full overflow-hidden md:h-[450px]">
-        <img src="https://framerusercontent.com/images/rU1GXBwKqLrrsDUEbuYGMUEXj7w.jpg?scale-down-to=2048" class="h-full w-full object-cover object-center" alt="hero image">
+        <img src="https://framerusercontent.com/images/rU1GXBwKqLrrsDUEbuYGMUEXj7w.jpg?scale-down-to=2048" class="h-full w-full object-cover object-center" alt="hero image" loading="lazy">
       </div>
 
       <div class="absolute flex flex-col items-center gap-2">
-        <div class="uppercase p-1 text-sm font-medium border solid border-[#e1e1e1] w-fit">new drop</div>
+        <div class="uppercase p-1 text-sm font-medium border border-solid border-[#e1e1e1] w-fit">new drop</div>
         <h1 class="text-center text-5xl uppercase font-bold md:text-[56px]">"SILENT OPS"<br>is out now</h1>
       </div>
+    </section>
+
+    <section class="music-grid flex flex-col gap-10 py-10 px-5">
+      <ul class="category-list flex gap-2">
+        <li>
+          <button class="px-3 py-2 text-base uppercase border border-solid border-[#e1e1e150] text-[#e1e1e150] transition-all ease-in-out duration-300 hover:text-[#e1e1e1] hover:border-[#e1e1e1]">classical</button>
+        </li>
+      </ul>
+
+      <ul class="track-list grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-4">
+        <li class="track-card relative">
+          <div class="h-full w-full overflow-hidden relative  pb-[100%]">
+            <img src="https://framerusercontent.com/images/rU1GXBwKqLrrsDUEbuYGMUEXj7w.jpg?scale-down-to=2048" alt="track title" loading="lazy" class="h-full w-full object-cover object-center absolute top-0">
+          </div>
+
+          <div class="flex items-center justify-between gap-4 uppercase px-4 pb-4 absolute w-full left-0 bottom-0">
+            <h2 class="text-xl font-bold max-w-52">silent ops</h2>
+            <button id="play-pause-btn" class="h-7 w-7 bg-[#e1e1e1] grid place-items-center text-[#101010]">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 grid place-items-center"><path d="M19.376 12.4161L8.77735 19.4818C8.54759 19.635 8.23715 19.5729 8.08397 19.3432C8.02922 19.261 8 19.1645 8 19.0658V4.93433C8 4.65818 8.22386 4.43433 8.5 4.43433C8.59871 4.43433 8.69522 4.46355 8.77735 4.5183L19.376 11.584C19.6057 11.7372 19.6678 12.0477 19.5146 12.2774C19.478 12.3323 19.4309 12.3795 19.376 12.4161Z"></path></svg>
+            </button>
+          </div>
+        </li>
+      </ul>
     </section>
   </main>
 
