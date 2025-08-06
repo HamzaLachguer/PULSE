@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #414141;
+  font-family: "Big Shoulders", sans-serif;
+  color: #e1e1e1;
+}
+
+.close-icon .line {
+  position: absolute;
+}
+
+.close-icon .one {
+  transform: rotate(45deg);
+}
+
+.close-icon .two {
+  transform: rotate(-45deg);
+}
+
+#nav-list {
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+}
+
+#nav-list.open {
+  max-height: 500px; /* Adjust based on your content */
+}
