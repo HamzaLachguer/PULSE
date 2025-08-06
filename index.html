@@ -98,9 +98,9 @@
       </ul>
 
       <ul class="track-list grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-4">
-        <li class="track-card relative">
+        <li class="track-card relative cursor-pointer group/track">
           <div class="h-full w-full overflow-hidden relative  pb-[100%]">
-            <img src="https://framerusercontent.com/images/rU1GXBwKqLrrsDUEbuYGMUEXj7w.jpg?scale-down-to=2048" alt="track title" loading="lazy" class="h-full w-full object-cover object-center absolute top-0">
+            <img src="https://framerusercontent.com/images/rU1GXBwKqLrrsDUEbuYGMUEXj7w.jpg?scale-down-to=2048" alt="track title" loading="lazy" class="h-full w-full object-cover object-center absolute top-0 group-hover/track:scale-110 transition-all duration-300 ease-in-out">
           </div>
 
           <div class="flex items-center justify-between gap-4 uppercase px-4 pb-4 absolute w-full left-0 bottom-0">
@@ -118,7 +118,18 @@
 
 
 
-  <footer></footer>
+  <footer class="p-5 border-t border-solid border-[#e1e1e150] bg-[#000] flex flex-col items-center md:flex-row justify-between">
+
+    <p class="text-base font-bold ">© 2025, TRVNS</p>
+    <nav>
+      <ul class="flex gap-3 uppercase text-base font-bold">
+        <li><a href="">playlist</a></li>
+        <li><a href="">account</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">contact</a></li>
+      </ul>
+    </nav>
+  </footer>
 
   <script src="./script.js"></script>
 </body>
